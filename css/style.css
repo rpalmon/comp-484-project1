@@ -1,12 +1,25 @@
+:root {
+  --color-1: color(display-p3 0.915 0.957 0.063);
+  --color-2: color(display-p3 0.084 0.182 0.108);
+}
+
+body {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
-    color: #333;
+    color: var(--color-1);
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 20px;
 }
 
 nav {
-    background-color: #f8f8f8;
+    background-color: var(--color-1);
+    color: var(--color-2);
     padding: 10px;
     text-align: center;
     font-family: 'Lucida Sans', sans-serif;
@@ -25,15 +38,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-2);
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: var(--color-2);
+    opacity: 0.7;
 }
 
 footer {
-    background-color: #f8f8f8;
+    background-color: var(--color-1);
+    color: var(--color-2);
     text-align: center;
     padding: 10px;
     font-family: 'Lucida Sans', sans-serif;
@@ -43,4 +58,93 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+p {
+    font-family: 'Lucida Sans', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: var(--color-1);
+}
+
+h1, h2, h3 {
+    color: var(--color-1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid var(--color-1);
+    
+    
+}
+
+.card_tile {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--color-1);
+    margin-right: 500px;
+    margin-left: 500px;    
+}
+
+
+.intro {
+    color: var(--color-1);
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid var(--color-1);
+    padding: 20px;
+}
+
+main ul, main ol {
+    color: var(--color-1);
+    font-family: 'Lucida Sans', sans-serif;
+    margin: 20px 40px;
+    line-height: 1.8;
+}
+
+main li {
+    margin: 10px 0;
+}
+
+main ol {
+    margin-left: 60px;
+}
+
+section[id="types"] {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    padding: 20px;
+    border-radius: 5px;
+    /* text-align: center; */
+    border: 1px solid var(--color-1);
+    margin: 20px;
+}
+
+a[id="sublink"] {
+    color: var(--color-1);
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-1);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.intro-image {
+    width: 50%;
+    height: auto;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
 }
