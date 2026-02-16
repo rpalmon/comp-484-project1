@@ -310,3 +310,82 @@ section[id="delta-images"], img {
     width: 40%
     /* margin-top: 20px; */
 }
+
+/* Software Layout Styles */
+.software-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+    background-color: var(--color-2);
+}
+
+.software-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+}
+
+.software-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 2px solid var(--color-1);
+    border-radius: 8px;
+    padding: 5px;
+    background-color: var(--color-2);
+    flex-shrink: 0;
+}
+
+.software-info {
+    flex: 1;
+}
+
+.software-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--color-1);
+}
+
+.software-info p {
+    margin: 0;
+    text-align: left;
+    line-height: 1.6;
+    color: var(--color-1);
+}
+
+.software-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.software-screenshot {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--color-1);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design for software items */
+@media (max-width: 768px) {
+    .software-item {
+        flex-direction: column;
+    }
+    
+    .software-left {
+        width: 100%;
+    }
+    
+    .software-right {
+        width: 100%;
+    }
+}
