@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>3D Printing | Materials</title>
+    <title>3D Printing | Types of Printers</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
@@ -30,8 +30,8 @@
                     <li><a id="sublink" href="#corexy">CoreXY style</a></li>
                 </ol>
             </li>
-            <li>SLA (Stereolithography)</li>
-            <li>SLS (Sintered Layer Slicing)</li>
+            <li>SLA (Stereolithography), Liquid Resin</li>
+            <li>SLS (Sintered Layer Slicing), Powder</li>
         </ul>
         </section>  
         
@@ -47,12 +47,31 @@
 
         <section class="section" id="fdm-types">
             <h3 id="cartesian">Cartesian style</h3>
-        
-    
+            <p>
+                Cartesian, also known as bedslingers, are the most common type of FDM printer.
+                They have a print bed that moves in the Y-axis, a print head that moves in the X-axis, and a Z-axis that moves the print head up and down.
+                Cartesian printers are generally easier to build and maintain, as well as being low cost. 
+
+            </p>
+            <section class="seciton" id="cart-images">
+                <img src="./media/cartesian.jpg" alt="Cartesian Style FDM Printer" class="printer-image">
+                <img src="./media/cartesian_mini.jpg" alt="Cartesian Style FDM Printer" class="printer-image">
+            </section>
+                
         </section>
 
         <section class="section" id="fdm-types">
             <h3 id="delta">Delta style</h3>
+            <p>
+                Delta printers have a circular print bed and three arms that move the print head in the X, Y, and Z axes. 
+                They are known for their speed and precision, but can be more difficult to calibrate and maintain than Cartesian printers.
+                They are also generally more expensive than Cartesian printers.
+                They are also known to have very tall build volumes.
+            </p>
+
+            <section class="section" id="delta-images">
+                <img src="./media/delta.png" alt="Delta Style FDM Printer" class="printer-image">
+            </section>    
 
 
         </section>
@@ -60,6 +79,11 @@
 
         <section class="section" id="fdm-types">
             <h3 id="corexy">CoreXY style</h3>
+            <p>
+                CoreXY printers have a unique design that allows for faster and more precise movement of the print head. 
+                They use a system of belts and pulleys to move the print head in the X and Y axes, while the Z-axis is controlled by a separate mechanism. 
+                CoreXY printers are known for their speed and precision, but can be more difficult to calibrate and maintain than Cartesian printers.
+                They are also generally more expensive than Cartesian printers, less expensive than Delta printers, and have a more compact design compared to both Cartesian and Delta printers.
 
 
         </section> 
