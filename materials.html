@@ -1,6 +1,7 @@
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Printing | Types of Materials</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -29,8 +30,8 @@
                         <li><a id="sublink" href="#petg">PETG (Polyethylene Terephthalate Glycol)</a></li>
                         <li><a id="sublink" href="#tpu">TPU (Thermoplastic Polyurethane)</a></li>
                     </ol>
-                <li>Resin (SLA)</li>
-                <li>Powder (SLS)</li>
+                <li><a id="sublink" href="#resin">Resin (SLA)</a></li>
+                <li><a id="sublink" href="#powder">Powder (SLS)</a></li>
             </ul>
         </section>
         <section class="section" id="filaments">
@@ -107,19 +108,21 @@
                     <ul>
                         <li>Printing temperature <code>220-250°C</code></li>
                         <li>Requires a heated bed but no enclosure needed</li>
+                        <li>Combines the best of PLA and ABS</li>
                     </ul>
                     
                     <h3>Best Uses</h3>
                     <ul>
-                        <li>Flexible parts</li>
-                        <li>Prototypes requiring flexibility</li>
-                        <li>Applications needing durability and flexibility</li>
+                        <li>Functional parts that need durability</li>
+                        <li>Mechanical parts and tools</li>
+                        <li>Containers or anything that holds liquids</li>
+                        <li>Parts that need chemical resistance</li>
                     </ul>
                     
                     <h3>Pros and Cons</h3>
                     <ul>
-                        <li>Pros: Flexible, durable, and easy to print</li>
-                        <li>Cons: Can be difficult to get right, may require post-processing</li>
+                        <li>Pros: Strong and durable, good layer adhesion, more flexible than PLA but not as much as TPU, food safe when done right</li>
+                        <li>Cons: Can be stringy if settings are wrong, sticks to everything when hot, needs good cooling</li>
                     </ul>
                 </div>
             </section>
@@ -137,34 +140,91 @@
                     <ul>
                         <li>Printing temperature <code>220-250°C</code></li>
                         <li>Requires a heated bed but no enclosure needed</li>
+                        <li>Highly flexible and elastic material</li>
+                    </ul>
                     
                     <h3>Best Uses</h3>
                     <ul>
-                        <li>Flexible parts</li>
-                        <li>Prototypes requiring flexibility</li>
-                        <li>Applications needing durability and flexibility</li>
+                        <li>Phone cases and protective covers</li>
+                        <li>Shoe insoles or grips</li>
+                        <li>Flexible hinges and moving parts</li>
+                        <li>Anything that needs to bend or compress</li>
                     </ul>
 
                     <h3>Pros and Cons</h3>
                     <ul>
-                        <li>Pros: Highly flexible, durable, and suitable for complex geometries</li>
-                        <li>Cons: Difficult to print, requires careful calibration, may be prone to stringing</li>
+                        <li>Pros: Super flexible, durable, shock absorbent, and really fun to print once you get it working</li>
+                        <li>Cons: Very difficult to print, requires slow speeds, prone to stringing, not all printers can handle it</li>
                     </ul>
                 </div>
             </section>
         </section>
+        <section class="section" id="filaments">
+            <h1>Other Materials</h1>
 
         <section class="section" id="resin">
-            <h1>Resin</h1>
-            <!-- Resin content goes here -->
-             <section class="section" id="resin">
-                <h2>Resin (SLA)</h2>
-                <div class="difficulty">
-                    <label>Difficulty Level:</label>
-                    <meter min="0" max="5" value="4" low="2" high="4" optimum="1">4 out of 5</meter>
-                    <span class="difficulty-text">Hard</span>
-                </div>
+            <h1>Resin (SLA)</h1>
+            <div class="difficulty">
+                <label>Difficulty Level:</label>
+                <meter min="0" max="5" value="4" low="2" high="4" optimum="1">4 out of 5</meter>
+                <span class="difficulty-text">Hard</span>
+            </div>
+            <div class="material-content">
+                <h3>Properties</h3>
+                <ul>
+                    <li>Uses liquid resin cured by UV light</li>
+                    <li>Requires post-processing (washing and curing)</li>
+                    <li>Produces extremely detailed and smooth prints</li>
+                    <li>Resin can be messy and has strong fumes</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <ul>
+                    <li>Miniatures and figurines with fine details</li>
+                    <li>Jewelry prototypes</li>
+                    <li>Dental and medical models</li>
+                    <li>Anything that needs really smooth surfaces</li>
+                </ul>
+                
+                <h3>Pros and Cons</h3>
+                <ul>
+                    <li>Pros: Amazing detail and surface quality, great for small intricate parts, faster than FDM for small prints</li>
+                    <li>Cons: Messy to work with, requires ventilation, post-processing is annoying, resin is more expensive than filament, smaller build volumes</li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="section" id="powder">
+            <h1>Powder (SLS)</h1>
+            <div class="difficulty">
+                <label>Difficulty Level:</label>
+                <meter min="0" max="5" value="5" low="2" high="4" optimum="1">5 out of 5</meter>
+                <span class="difficulty-text">Very Hard (Industrial)</span>
+            </div>
+            <div class="material-content">
+                <h3>Properties</h3>
+                <ul>
+                    <li>Uses a laser to fuse powder particles together</li>
+                    <li>Typically requires industrial equipment</li>
+                    <li>Very expensive compared to FDM and SLA</li>
+                    <li>Produces strong, functional parts</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <ul>
+                    <li>Industrial prototypes and end-use parts</li>
+                    <li>Complex geometries that can't be done with other methods</li>
+                    <li>Parts that need high strength and durability</li>
+                    <li>Production runs of functional parts</li>
+                </ul>
+                
+                <h3>Pros and Cons</h3>
+                <ul>
+                    <li>Pros: Very strong parts, no support structures needed, can print complex shapes that would be impossible with FDM</li>
+                    <li>Cons: Extremely expensive, requires industrial machines, not practical for hobbyists, powder can be messy</li>
+                </ul>
+            </div>
+        </section>
         </section>
     </main>
 
